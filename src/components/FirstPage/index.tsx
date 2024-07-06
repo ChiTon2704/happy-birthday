@@ -11,11 +11,11 @@ export const FirstPage = ({ setStep }: { setStep: any; startAudio: any }) => {
   const iSpeed = 100; // time delay of print out
   let iIndex = 0; // start printing array at this posision
   let iArrLength = aText[0].length; // the length of the text array
-  const iScrollAt = 20; // start scrolling up at this many lines
+  // const iScrollAt = 20; // start scrolling up at this many lines
 
   let iTextPos = 0; // initialise text position
   let sContents = ""; // initialise contents variable
-  let iRow; // initialise current row
+  // let iRow; // initialise current row
   const handleChangeStep = useCallback(() => {
     setStep(2);
   }, []);
@@ -23,7 +23,7 @@ export const FirstPage = ({ setStep }: { setStep: any; startAudio: any }) => {
     sContents = " ";
     console.log("hazii");
 
-    iRow = Math.max(0, iIndex - iScrollAt);
+    // iRow = Math.max(0, iIndex - iScrollAt);
     const destination = document.getElementById("typedtext");
 
     // while (iRow < iIndex) {

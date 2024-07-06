@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import AddCardIcon from "images/picture_1.jpg";
 import "./index.scss";
 
 const src = new URL("/assets/dunglamtraitimanhdau.mp3", import.meta.url).href;
