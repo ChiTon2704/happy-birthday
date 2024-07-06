@@ -21,7 +21,6 @@ export const FirstPage = ({ setStep }: { setStep: any; startAudio: any }) => {
   }, []);
   function typewriter() {
     sContents = " ";
-    console.log("hazii");
 
     // iRow = Math.max(0, iIndex - iScrollAt);
     const destination = document.getElementById("typedtext");

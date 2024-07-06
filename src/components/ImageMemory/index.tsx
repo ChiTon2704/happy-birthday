@@ -11,18 +11,22 @@ export const ImageMemory = () => {
     },
     {
       key: 2,
-      url: "images/picture_3.jpg",
+      url: "images/picture_2.jpg",
     },
     {
       key: 3,
-      url: "images/picture_4.jpg",
+      url: "images/picture_3.jpg",
     },
     {
       key: 4,
-      url: "images/picture_5.jpg",
+      url: "images/picture_4.jpg",
     },
     {
       key: 5,
+      url: "images/picture_5.jpg",
+    },
+    {
+      key: 6,
       url: "images/picture_6.jpg",
     },
   ];
@@ -38,7 +42,6 @@ export const ImageMemory = () => {
     audioRef.current.load();
     audioRef.current.play();
     setTimeout(() => {
-      console.log("abcccc");
       setShowHeart(true);
     }, 6500);
   }, [audioRef]);
@@ -51,7 +54,7 @@ export const ImageMemory = () => {
           {imageMemoryList.map((img) => (
             <div
               className="slide"
-              style={{ animationDelay: `${img.key * 6}s` }}
+              style={{ animationDelay: `${img.key * 5.5}s` }}
               key={img.key}
             >
               <img src={img.url} />
