@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #212121;
+}
+
+.birthday-name {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff7c;
+  position: relative;
+  border: none;
+  background: transparent;
+  letter-spacing: 4px;
+  font-size: 40px;
+  font-family: "Arial";
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0;
+  // cursor: pointer;
+}
+
+span {
+  color: transparent;
+}
+
+.front-text {
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  overflow: hidden;
+  transition: all 0.5s;
+  border-bottom: 2px solid transparent;
+  animation: 5s anim infinite;
+  width: 0%;
+}
+.actual-text {
+  animation: 5s anim infinite;
+  font-size: 40px;
+  width: 0%;
+  transition: all 0.5s;
+}
+
+.change-color .front-text {
+  width: 100%;
+  font-size: 60px;
+  -webkit-text-stroke: 1px #5f03f400;
+}
+.change-color .actual-text {
+  font-size: 60px;
+  width: 100%;
+}
+.date-of-birth {
+  font-size: 24px;
+  font-family: "Arial";
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff7c;
+  margin-top: 10px;
+  word-spacing: -3px;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 400%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}

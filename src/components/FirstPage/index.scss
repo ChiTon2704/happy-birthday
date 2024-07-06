@@ -1,0 +1,140 @@
+#typedtext {
+    color: white;
+    text-align: left;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3.2em;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    // white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-shadow: .03em .03em 0 rgba(254, 59, 151, .7);
+    // font-weight: bolder;
+    overflow: hidden;
+  }
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+body {
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.first-line {
+  display: flex;
+}
+.first-page {
+  width: 1200px;
+  .container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.text-title {
+  font-family: "Sacramento";
+  font-size: 3.2em;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-shadow: .03em .03em 0 rgba(254, 59, 151, .7);
+  display: contents;
+  font-weight: bolder;
+  overflow: hidden;
+}
+
+// span {
+//   color: #000;
+// }
+
+.heart {
+  width: 100px;
+  height: 90px;
+  animation: heartbeat 1s infinite;
+  transform: scale(1);
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(.75);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(.75);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(.75);
+  }
+
+  100% {
+    transform: scale(.75);
+  }
+}
+
+.typing {
+  display: inline-block;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    border-right: .06em solid #000;
+  }
+
+  99% {
+    border-right: .06em solid #000;
+  }
+
+  100% {
+    border-right: 0;
+  }
+}
+
+.typing {
+  animation: typing 6s steps(28, end);
+}
